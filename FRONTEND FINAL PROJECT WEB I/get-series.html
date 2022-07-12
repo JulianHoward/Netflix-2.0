@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET Series</title>
+</head>
+<body>
+    <h1>OBTENIENDO SERIES</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Serie ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    <script>
+        let url = 'http://localhost:3001/api/chirps'
+        fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarData(data))
+            .catch(error => console.log(error))
+
+        const mostrarData = (data) => {
+            console.log(data);
+            let body = ''
+            for(let i = 0; i < data.length; i++){
+                body += `<tr><td>${data[i].serie_id}</td><td>${data[i].nombre_serie}</td><td>${data[i].descripcion}</td></tr>`
+            }
+            document.getElementById('data').innerHTML = body
+        }
+    </script>
+</body>
+</html>

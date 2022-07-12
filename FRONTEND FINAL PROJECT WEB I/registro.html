@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro PLAYIT</title>
+
+    <link rel="shortcut icon" href="imagenes/Play it.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/69e60473f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <header class="header">
+        <div class="responsive-desktop">
+            <div class="logo-container">
+                <img src="imagenes/Play it.png" alt="Logo PLAYIT" class="imagen-logo">
+            </div>
+            <div class="titulos-responsive">
+                <div class="titulo-container">
+                    <h1 class="titulo">¡PlayIt! Plataforma de entretenimeinto, contenido variado
+                        para todos los gustos y edades
+                    </h1>
+                </div>
+                <div class="titulos-dos-container">
+                    <h2 class="titulo-dos">Regístrate ahora mismo, de manera gratuita
+                        y sencilla para disfrutar de nuestro contenido</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-form">
+            <h2 class="title-form">Sign up</h2>
+            <form action="http://localhost:3001/ingresar-user" method="post" class="sign-up-form">
+                <div class="input-field">
+                    <i class="fas fa-user" id="i-user"></i>
+                    <input type="text" placeholder="Usuario-ID" class="input" name="usuario_id">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user" id="i-user"></i>
+                    <input type="text" placeholder="Nombre Completo" class="input" name="nombre_completo">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user" id="i-user"></i>
+                    <input type="text" placeholder="Username" class="input" name="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope" id="i-user"></i>
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock" id="i-lock"></i>
+                    <input type="password" placeholder="Password" class="input" name="password">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user" id="i-user"></i>
+                    <input type="text" placeholder="Tipo de Usuario" class="input" name="tipo_usuario">
+                </div>
+                <div class="container-button">
+                    <input type="submit" class="login-button" value="Create">
+                </div>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>

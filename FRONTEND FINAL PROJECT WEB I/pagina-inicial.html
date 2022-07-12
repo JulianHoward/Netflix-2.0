@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayIt - Main</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/69e60473f4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/pagina-inicial.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="title-header">PlayIt</h1>
+            <nav class="nav-header">
+                <a href="#">Inicio</a>
+                <a href="#">Series</a>
+                <a href="#">Mi Lista</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="serie-principal">
+            <div class="contenedor">
+                <h2 class="titulo-serie-principal">Game of Thrones</h2>
+                <p class="description">
+                    En un mundo fantástico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.
+                </p>
+                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+        </div>
+
+        <div class="series-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h2>Nuestras Recomendaciones</h2>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <button role="button" id="arrow-left" class="arrow-left">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/1.jpg" alt="La Bicicleta de los Huanca">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/2.jpg" alt="Game of Thrones">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/3.webp" alt="Breaking Bad">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/4.jpg" alt="Peaky Blinders">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/5.jpg" alt="La Casa de Papel">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/6.jpg" alt="Vis a Vis">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/7.webp" alt="Apache - Carlos Tévez">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/8.jpg" alt="Stranger Things">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/9.webp" alt="Pedro el Escamoso">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-first/10.jpeg" alt="Squid Game">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button role="button" id="arrow-right" class="arrow-right">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="series-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h2>Favoritos de Bolivia</h2>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-favoritos-bolivia/1-bolivia.jpg" alt="Betty la Fea">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-favoritos-bolivia/2-bolivia.webp" alt="Boys Over Flowers">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-favoritos-bolivia/6-bolivia.jpg" alt="Guerra de Vecinos">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-favoritos-bolivia/7-bolivia.webp" alt="Pasión de Gavilanes">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-favoritos-bolivia/10-bolivia.jpg" alt="La Casa de las Flores">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="series-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h2>Las más premiadas - Emmy Awards</h2>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-premios/got-premio.webp" alt="Game Of Thrones">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-premios/frasier-premio.jpg" alt="Frasier">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-premios/simpsons-premio.jpg" alt="The Simpsons">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-premios/modern-premio.jpg" alt="Modern Family">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-premios/friends-premio-dos.jfif" alt="F.R.I.E.N.D.S.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="series-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h2>Crímen de la vida real</h2>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <div class="contenedor-carrusel">
+                    <div class="carrusel">
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-crimen/patron.jpg" alt="El Patrón del Mal">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-crimen/narcos.jpg" alt="Narcos">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-crimen/bundy.jpg" alt="Ted Bundy">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-crimen/see.jpg" alt="When They See Us">
+                            </a>
+                        </div>
+                        <div class="serie hover">
+                            <a href="#">
+                                <img src="imagenes/carrusel/carrusel-crimen/ever.jpg" alt="The Worst Roomates Ever">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

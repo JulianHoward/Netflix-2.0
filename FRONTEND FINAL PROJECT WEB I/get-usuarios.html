@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET Usuarios</title>
+</head>
+<body>
+    <h1>OBTENIENDO USUARIOS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Usuario ID</th>
+                <th>Nombre Completo</th>
+                <th>Username</th>
+                <th>Tipo de Usuario</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    <script>
+        let url = 'http://localhost:3001/api/users'
+        fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarData(data))
+            .catch(error => console.log(error))
+
+        const mostrarData = (data) => {
+            console.log(data);
+            let body = ''
+            for(let i = 0; i < data.length; i++){
+                body += `<tr><td>${data[i].usuario_id}</td><td>${data[i].nombre_completo}</td><td>${data[i].username}</td><td>${data[i].tipo_usuario}</td></tr>`
+            }
+            document.getElementById('data').innerHTML = body
+        }
+    </script>
+</body>
+</html>

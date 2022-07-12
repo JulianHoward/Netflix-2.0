@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET Temporadas</title>
+</head>
+<body>
+    <h1>OBTENIENDO TEMPORADAS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Temporada ID</th>
+                <th>Nombre</th>
+                <th>Órden</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    <script>
+        let url = 'http://localhost:3001/api/temporadas'
+        fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarData(data))
+            .catch(error => console.log(error))
+
+        const mostrarData = (data) => {
+            console.log(data);
+            let body = ''
+            for(let i = 0; i < data.length; i++){
+                body += `<tr><td>${data[i].temporada_id}</td><td>${data[i].nombre_temporada}</td><td>${data[i].orden}</td></tr>`
+            }
+            document.getElementById('data').innerHTML = body
+        }
+    </script>
+</body>
+</html>

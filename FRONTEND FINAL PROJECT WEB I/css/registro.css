@@ -1,0 +1,155 @@
+*{
+    border: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #A3CBBE;
+}
+
+.header{
+    background-color: #A3CBBE;
+}
+
+.imagen-logo{
+    width: 60%;
+    padding-left: 70px;
+}
+
+.titulo{
+    font-size: 15px;
+    width: 80%;
+    padding-left: 30px;
+}
+
+.titulo-dos{
+    padding-top: 10px;
+    font-size: 10px;
+    width: 80%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.title-form{
+    padding-left: 120px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.input, .login-button{
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.input-field{
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.container-button{
+    padding-left: 135px;
+    padding-top: 15px;
+}
+
+@media (min-width: 760px){
+    .imagen-logo{
+        width: 90%;
+        padding-left: 50px;
+    }
+
+    .titulo{
+        font-size: 50px;
+        width: 90%;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
+    .titulo-dos{
+        font-size: 35px;
+        width: 90%;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
+    .title-form{
+        padding-left: 270px;
+        font-size: 50px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    #i-user, #i-lock{
+        font-size: 30px;
+    }
+
+    .input, .login-button{
+        border-radius: 20px;
+        font-size: 30px;
+        border: 2px solid black;
+    }
+
+    .input-field{
+        padding-left: 150px;
+    }
+
+    .container-button{
+        padding-left: 445px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 999px){
+
+    .responsive-desktop{
+        display: flex;
+    }
+
+    .imagen-logo{
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .titulo{
+        font-size: 30px;
+        width: 90%;
+    }
+
+    .titulos-responsive{
+        padding-top: 60px;
+    }
+
+    .titulo-dos{
+        padding-top: 30px;
+        font-size: 15px;
+    }
+
+    .title-form{
+        padding-left: 620px;
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+
+    #i-user, #i-lock{
+        font-size: 20px;
+    }
+
+    .input, .login-button{
+        border-radius: 20px;
+        font-size: 20px;
+        border: 2px solid black;
+    }
+
+    .container-button{
+        padding-top: 20px;
+    }
+
+    .input-field{
+        padding-left: 520px;
+    }
+
+    .container-button{
+        padding-left: 720px;
+    }
+}

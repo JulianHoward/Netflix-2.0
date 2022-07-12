@@ -1,0 +1,211 @@
+*{
+    border: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    background-color: #A3CBBE;
+}
+
+.imagen-logo{
+    width: 70%;
+    padding-left: 50px;
+}
+
+.titulo{
+    font-size: 20px;
+    width: 80%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.titulo-dos{
+    font-size: 15px;
+    width: 80%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.title-form{
+    padding-left: 170px;
+    padding-bottom: 10px;
+}
+
+.input, .login-button{
+    border-radius: 20px;
+}
+
+.input-field{
+    padding-left: 110px;
+}
+
+.container-button{
+    padding-left: 240px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footer{
+    color: white;
+    background-color: black;
+}
+
+.title-tres{
+    padding-left: 110px;
+    padding-top: 15px;
+}
+
+.text-tres{
+    padding-left: 170px;
+    padding-top: 10px;
+}
+
+.links{
+    padding-left: 180px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.link-html{
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width: 760px){
+    .imagen-logo{
+        width: 90%;
+        padding-left: 50px;
+    }
+
+    .titulo{
+        font-size: 50px;
+        width: 90%;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+
+    .titulo-dos{
+        font-size: 35px;
+        width: 90%;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+
+    .title-form{
+        padding-left: 320px;
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    #i-user, #i-lock{
+        font-size: 30px;
+    }
+
+    .input, .login-button{
+        border-radius: 20px;
+        font-size: 30px;
+    }
+
+    .input-field{
+        padding-left: 190px;
+    }
+
+    .container-button{
+        padding-left: 475px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+
+    .title-tres{
+        padding-left: 170px;
+        font-size: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .text-tres{
+        padding-left: 290px;
+        padding-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .links{
+        padding-left: 332px;
+        padding-bottom: 25px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 999px){
+
+    .responsive-desktop{
+        display: flex;
+    }
+
+    .imagen-logo{
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    .titulo{
+        font-size: 35px;
+        width: 90%;
+    }
+
+    .titulos-responsive{
+        padding-top: 40px;
+    }
+
+    .titulo-dos{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    .title-form{
+        padding-left: 50%;
+        font-size: 35px;
+    }
+
+    #i-user, #i-lock{
+        font-size: 40px;
+    }
+
+    .input, .login-button{
+        border-radius: 20px;
+        font-size: 30px;
+    }
+
+    .input-field{
+        padding-left: 440px;
+    }
+
+    .container-button{
+        padding-left: 738px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .title-tres{
+        padding-left: 400px;
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .text-tres{
+        padding-left: 500px;
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .links{
+        padding-left: 535px;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+}
